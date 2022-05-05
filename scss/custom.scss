@@ -1,16 +1,23 @@
-// Required
 @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
-// Default variable overrides
-$body-bg: #F8CEF8;
+// color overrides
+$body-bg: #FEFFB4;
 $body-color: #000;
 
-// Required
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+$theme-colors: (
+  "primary":    #EAEC5C,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       #FD4C43,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      #FEB1AD,
+  "dark":       $dark
+);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 
-// Optional Bootstrap components here
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-// etc
+// typography overrides
+$font-family-base: "Andale Mono", AndaleMono, monospace;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
