@@ -11,40 +11,45 @@
 
       .titleBanner {
         height: 90vh;
-        background-image: url("images/Olive3.png");
+        background-image: url("images/bg-pattern.jpg");
         background-size: cover;
       }
 
-      .title {
-        position: relative;
-        top: 10%;
+      .titleBanner::after{
+        content: "";
+        display: block;
+        min-height: 90vh
       }
 
-      #scrollspyNav{ min-height: 10vh; }
+      .titleText {
+        position: sticky;
+        top: 10%;
+        mix-blend-mode: screen;
+      }
+
+      .navbar {
+        min-height: 10vh;
+      }
 
       .aboutBanner {
-
       }
 
-      #scrollspyContainer {
-        position: relative;
-      }
-
-      .navbar { justify-content: center; }
+      #scrollspyContainer { position: relative; }
     </style>
   </head>
 
   <body>
 
     <div class="container-fluid titleBanner">
-      <div class="container bg-light title">
-        <h1 class="display-1 text-header">[title]</h1>
+      <div class="container titleText">
+        <span class="display-1 bg-light">[title]</span>
+        <span class="display-2 text-header">[subtitle]</span>
       </div>
     </div>
 
     <div id="scrollspyNav" class="container sticky-top">
       <nav class="navbar navbar-expand-md">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <li class="navbar-item">
             <a class="nav-link" href="#about">about</a>
           </li>
