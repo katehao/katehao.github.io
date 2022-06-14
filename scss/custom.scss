@@ -2,17 +2,17 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // color overrides
-$body-bg: #FEFFB4;
-$body-color: #000;
+//$body-bg: #FEFFB4;
+//$body-color: #000;
 
 $theme-colors: (
-  "primary":    #EAEC5C,
+  "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
-  "info":       #FD4C43,
+  "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "light":      #FEB1AD,
+  "light":      $light,
   "dark":       $dark
 );
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
