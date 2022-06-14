@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // color overrides
-$body-bg: #ffe866;
+//$body-bg: #ffe866;
 //$body-color: #000;
 
 /*$theme-colors: (
@@ -17,7 +17,8 @@ $body-bg: #ffe866;
 );*/
 
 $custom-colors: (
-  "header": #e5d4f6
+  "navbg": #ffe866,
+  "header": #FFF5E0
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -30,6 +31,5 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 $font-family-base: "Andale Mono", AndaleMono, monospace;
 
 // layout overrides
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";

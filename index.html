@@ -31,10 +31,13 @@
         min-height: 10vh;
       }
 
-      .aboutBanner {
+      #scrollspyContainer { position: relative; }
+
+      .sectionHeader {
+        position: sticky;
+        top: 10vh;
       }
 
-      #scrollspyContainer { position: relative; }
     </style>
   </head>
 
@@ -42,66 +45,52 @@
 
     <div class="container-fluid titleBanner">
       <div class="container titleText">
-        <span class="display-1 bg-light">[title]</span>
-        <span class="display-2 text-header">[subtitle]</span>
+        <span class="display-1 bg-header">[title]</span>
+        <span class="display-3 text-header">[subtitle]</span>
       </div>
     </div>
 
-    <div id="scrollspyNav" class="container sticky-top">
-      <nav class="navbar navbar-expand-md">
+    <div id="scrollspyNav" class="container-fluid sticky-top px-0">
+      <nav class="navbar navbar-expand-sm bg-navbg">
         <ul class="navbar-nav mx-auto">
           <li class="navbar-item">
-            <a class="nav-link" href="#about">about</a>
+            <a class="nav-link" href="#about">ABOUT</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section1">link1</a>
+            <a class="nav-link" href="#section1">LINK1</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section2">link2</a>
+            <a class="nav-link" href="#section2">LINK2</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section3">link3</a>
+            <a class="nav-link" href="#section3">LINK3</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#">TOP</a>
           </li>
         </ul>
       </nav>
     </div>
 
-    <div id="about" contextmenu=""class="container-fluid bg-info aboutBanner">
-      <h4>about the project</h4>
+
+    <div id="about" class="container-fluid py-5">
+      <h1 class="sectionHeader">about the project</h1>
+      about text
     </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#scrollspyNav" id="scrollspyContainer" class="container-fluid" tabindex="0">
+    <div id="section1" class="container-fluid">
+      <h1 id="section1" class="sectionHeader">section 1</h1>
+      <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
+    </div>
 
-      <div class="row row-cols-auto">
-        <div class="col px-2">
-          <h4 id="section1">header</h4>
-          <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
-        </div>
-        <div class="col">
-          <p>margin</p>
-        </div>
-      </div>
+    <div id="section2" class="container-fluid">
+      <h1 id="section2" class="sectionHeader">section 2</h1>
+      <img src="QAW-image.jpg" class="img-fluid mx-auto d-block">
+    </div>
 
-      <div id="section2" class="row">
-        <div class="col">
-          <p class="bg-secondary m-3">test</p>
-        </div>
-        <div class="col">
-          <p>test</p>
-          <img src="QAW-image.jpg" class="img-fluid mx-auto d-block">
-        </div>
-      </div>
-
-      <div id="section3" class="row">
-        <div class="col">
-          <p>test</p>
-          <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
-        </div>
-        <div class="col">
-          <p>test</p>
-        </div>
-      </div>
-
+    <div id="section3" class="container-fluid">
+      <h1 id="section3" class="sectionHeader">section 3</h1>
+      <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
     </div>
 
 
