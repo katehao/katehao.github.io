@@ -9,34 +9,44 @@
     <style>
       html { scroll-behavior: smooth; }
 
-      #banner {
+      .titleBanner {
         height: 90vh;
         background-image: url("images/Olive3.png");
         background-size: cover;
       }
 
-      #scrollspyNav {
-        min-height: 10vh;
+      .title {
+        position: relative;
+        top: 10%;
+      }
+
+      #scrollspyNav{ min-height: 10vh; }
+
+      .aboutBanner {
+
       }
 
       #scrollspyContainer {
         position: relative;
-        overflow-y: scroll;
       }
+
+      .navbar { justify-content: center; }
     </style>
   </head>
 
   <body>
 
-    <div id="banner" class="container-fluid">
-      <h1>[title]</h1>
+    <div class="container-fluid titleBanner">
+      <div class="container bg-light title">
+        <h1 class="display-1 text-header">[title]</h1>
+      </div>
     </div>
 
-    <div id="scrollspyNav" class="sticky-top">
-      <nav class="navbar navbar-expand">
+    <div id="scrollspyNav" class="container sticky-top">
+      <nav class="navbar navbar-expand-md">
         <ul class="navbar-nav">
           <li class="navbar-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#about">about</a>
           </li>
           <li class="navbar-item">
             <a class="nav-link" href="#section1">link1</a>
@@ -51,10 +61,14 @@
       </nav>
     </div>
 
-    <div data-bs-spy="scroll" data-bs-target="#scrollspyNav" id="scrollspyContainer" class="container-fluid bg-primary" tabindex="0">
+    <div id="about" contextmenu=""class="container-fluid bg-info aboutBanner">
+      <h4>about the project</h4>
+    </div>
 
-      <div class="row">
-        <div class="col-8 px-2">
+    <div data-bs-spy="scroll" data-bs-target="#scrollspyNav" id="scrollspyContainer" class="container-fluid" tabindex="0">
+
+      <div class="row row-cols-auto">
+        <div class="col px-2">
           <h4 id="section1">header</h4>
           <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
         </div>

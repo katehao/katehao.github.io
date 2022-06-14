@@ -5,7 +5,7 @@
 //$body-bg: #FEFFB4;
 //$body-color: #000;
 
-$theme-colors: (
+/*$theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -13,9 +13,18 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+);*/
+
+$custom-colors: (
+  "header": #f1424f
 );
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // typography overrides
 $font-family-base: "Andale Mono", AndaleMono, monospace;
