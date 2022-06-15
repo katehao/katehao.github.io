@@ -6,7 +6,7 @@
 //$body-color: #000;
 
 $custom-colors: (
-  "navbg": #ffe866,
+  "nav": #ffe866,
   "header": #fff5e0
 );
 
@@ -19,11 +19,14 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 // typography overrides
 $font-family-base: "Andale Mono", AndaleMono, monospace;
 
-// nav link overrides
+// nav link/button overrides
 $nav-link-color: #4c8e8a;
 $nav-link-hover-color: #f1424f;
 $nav-pills-link-active-bg: #f1424f;
 $nav-pills-border-radius: 50px;
+$btn-border-radius: 50%;
+$btn-hover-bg-tint-amount: 30%;
+$btn-hover-border-tint-amount: 20%;
 
 // layout overrides
 
