@@ -33,9 +33,11 @@
         color: inherit;
       }
 
-      .navbar {
-        min-height: 10vh;
-      }
+      .navbar { min-height: 10vh; }
+
+      .nav-link { border-bottom: 3px dotted #ffe866 !important; }
+
+      .nav-link:hover { border-bottom: 3px dotted #f1424f !important; }
 
       .sectionHeader {
         position: sticky;
@@ -44,7 +46,7 @@
     </style>
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="scrollspyNav" data-bs-offset="80" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target="scrollspyNav" data-bs-offset="0" tabindex="0">
 
     <div class="container-fluid titleBanner">
       <div class="container titleText">
@@ -80,7 +82,11 @@
     <div id="wrapper" class="container-fluid">
       <div id="about" class="container-fluid scrollSection">
         <h1 class="sectionHeader"><span class="bg-header">about the project</span></h1>
-        about text
+        <p>regular text</p>
+        <p class="fw-bolder">bold</p>
+        <p class="fst-italic">italic</span>
+        <p><a href="#">hyperlink</a></p>
+        <p><mark>highlighted text</mark></p>
       </div>
 
       <div id="section1" class="container-fluid scrollSection">
@@ -99,7 +105,7 @@
       </div>
 
       <div id="credits" class="container-fluid scrollSection">
-        <h1 class="bg-light sectionHeader"><span class="bg-header">credits</span></h1>
+        <h1 class="sectionHeader"><span class="bg-header">credits</span></h1>
         credits text
   </div>
 

@@ -4,11 +4,10 @@
 // color overrides
 //$body-bg: #ffe866;
 //$body-color: #000;
-$header: #fff5e0;
 
 $custom-colors: (
   "navbg": #ffe866,
-  "header": $header
+  "header": #fff5e0
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -22,8 +21,9 @@ $font-family-base: "Andale Mono", AndaleMono, monospace;
 
 // nav link overrides
 $nav-link-color: #4c8e8a;
-$nav-link-hover-color: $header;
-$nav-pills-link-active-bg: #bb9781;
+$nav-link-hover-color: #f1424f;
+$nav-pills-link-active-bg: #f1424f;
+$nav-pills-border-radius: 50px;
 
 // layout overrides
 
