@@ -27,32 +27,40 @@
         mix-blend-mode: screen;
       }
 
+      .titleLink, .titleLink:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+
       .navbar {
         min-height: 10vh;
       }
-
-      #scrollspyContainer { position: relative; }
 
       .sectionHeader {
         position: sticky;
         top: 10vh;
       }
 
+      .scrollSection {
+        
+      }
     </style>
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="scrollspyNav" data-bs-offset="80" tabindex="0">
 
     <div class="container-fluid titleBanner">
       <div class="container titleText">
-        <span class="display-1 bg-header">[title]</span>
-        <span class="display-3 text-header">[subtitle]</span>
+        <a class="titleLink" href="#">
+          <span class="display-1 bg-header">[title]</span>
+          <span class="display-3 text-header">[subtitle]</span>
+        </a>
       </div>
     </div>
 
     <div id="scrollspyNav" class="container-fluid sticky-top px-0">
       <nav class="navbar navbar-expand-sm bg-navbg">
-        <ul class="navbar-nav mx-auto">
+        <ul class="nav nav-pills mx-auto">
           <li class="navbar-item">
             <a class="nav-link" href="#about">ABOUT</a>
           </li>
@@ -66,34 +74,45 @@
             <a class="nav-link" href="#section3">LINK3</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#">TOP</a>
+            <a class="nav-link" href="#credits">CREDITS</a>
           </li>
         </ul>
       </nav>
     </div>
 
+    <div id="wrapper" class="container-fluid">
+      <div id="about" class="container-fluid scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">about the project</span></h1>
+        about text
+      </div>
 
-    <div id="about" class="container-fluid py-5">
-      <h1 class="sectionHeader">about the project</h1>
-      about text
-    </div>
+      <div id="section1" class="container-fluid scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">section 1</span></h1>
+        <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
+      </div>
 
-    <div id="section1" class="container-fluid">
-      <h1 id="section1" class="sectionHeader">section 1</h1>
-      <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
-    </div>
+      <div id="section2" class="container-fluid scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">section 2</span></h1>
+        <img src="QAW-image.jpg" class="img-fluid mx-auto d-block">
+      </div>
 
-    <div id="section2" class="container-fluid">
-      <h1 id="section2" class="sectionHeader">section 2</h1>
-      <img src="QAW-image.jpg" class="img-fluid mx-auto d-block">
-    </div>
+      <div id="section3" class="container-fluid scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">section 3</span></h1>
+        <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
+      </div>
 
-    <div id="section3" class="container-fluid">
-      <h1 id="section3" class="sectionHeader">section 3</h1>
-      <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
-    </div>
+      <div id="credits" class="container-fluid scrollSection">
+        <h1 class="bg-light sectionHeader"><span class="bg-header">credits</span></h1>
+        credits text
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var scrollOffset = $('#scrollspyNav').height();
+      console.log(scrollOffset);
+      $('.scrollSection').css({paddingTop: scrollOffset + 10 + 'px'});
+    </script>
   </body>
 </html>
