@@ -1,0 +1,43 @@
+html { scroll-behavior: smooth; }
+
+.titleBanner {
+  height: 90vh;
+  background-image: url("../images/bg-pattern.jpg");
+  background-size: cover;
+}
+.titleText {
+  position: sticky;
+  top: 10%;
+  mix-blend-mode: screen;
+}
+.titleLink, .titleLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar { min-height: 10vh; }
+.nav-link { border-bottom: 3px dotted #ffe866 !important; }
+.nav-link:hover { border-bottom: 3px dotted #f1424f !important; }
+
+.sectionHeader {
+  position: sticky;
+  top: 11vh;
+  margin-bottom: 20px;
+}
+
+.spacer { height: 70px; }
+
+#olive { background-color: #4c8e8a; }
+#lukaza { background-color: #e5d4f6; }
+#arthur { background-color: #000000; }
+#andriniki { background-color: #f8d58c; }
+#laster { background-color: #ab5b59; }
+#clouds { background-color: #4c8e8a; }
+
+#returnLink {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vh;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}

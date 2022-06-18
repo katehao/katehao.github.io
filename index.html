@@ -6,45 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/custom.css">
-    <style>
-      html { scroll-behavior: smooth; }
-
-      .titleBanner {
-        height: 90vh;
-        background-image: url("images/bg-pattern.jpg");
-        background-size: cover;
-      }
-      .titleText {
-        position: sticky;
-        top: 10%;
-        mix-blend-mode: screen;
-      }
-      .titleLink, .titleLink:hover {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .navbar { min-height: 10vh; }
-      .nav-link { border-bottom: 3px dotted #ffe866 !important; }
-      .nav-link:hover { border-bottom: 3px dotted #f1424f !important; }
-
-      .sectionHeader {
-        position: sticky;
-        top: 11vh;
-      }
-
-      .testGrid {
-        border: 2px solid black;
-      }
-
-      #returnLink {
-        position: fixed;
-        bottom: 2vh;
-        right: 2vh;
-        opacity: 0;
-        transition: opacity 0.4s ease-in-out;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./css/mods.css">
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="scrollspyNav" data-bs-offset="0" tabindex="0">
@@ -58,21 +20,37 @@
       </div>
     </div>
 
-    <div id="scrollspyNav" class="container-fluid sticky-top px-0">
-      <nav class="navbar navbar-expand-sm bg-nav">
+    <div id="scrollspyNav" class="container-fluid sticky-top px-0 d-none d-sm-block">
+      <nav class="navbar navbar-expand-md bg-nav">
         <ul class="nav nav-pills mx-auto">
           <li class="navbar-item">
             <a class="nav-link" href="#about">ABOUT</a>
           </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section1">SECTION 1</a>
+            <a class="nav-link" href="#olive" >[OLIVE&HEADS/BODIES/LEGS]</a>
           </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section2">SECTION 2</a>
+            <a class="nav-link" href="#lukaza">[LUKAZA]</a>
           </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
           <li class="navbar-item">
-            <a class="nav-link" href="#section3">SECTION 3</a>
+            <a class="nav-link" href="#arthur">[ARTHUR&ILOW]</a>
           </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#andriniki">[ANDRINIKI&ILOW]</a>
+          </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#laster">[LASTER&ILOW]</a>
+          </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#clouds">[ILOW&CLOUDS]</a>
+          </li>
+          <li class="navbar-text d-inline d-xl-none">|</li>
           <li class="navbar-item">
             <a class="nav-link" href="#credits">CREDITS</a>
           </li>
@@ -80,7 +58,8 @@
       </nav>
     </div>
 
-    <div id="wrapper" class="container-fluid">
+    <div id="wrapper" class="container-fluid p-0">
+
       <div id="about" class="container-fluid scrollSection">
         <h1 class="sectionHeader"><span class="bg-header">about the project</span></h1>
         <p>regular text</p>
@@ -88,26 +67,83 @@
         <p class="fst-italic">italic</span>
         <p><a href="#">hyperlink</a></p>
         <p><mark>highlighted text</mark></p>
+        <div class="spacer"></div>
       </div>
 
-      <div id="section1" class="container-fluid scrollSection">
-        <h1 class="sectionHeader"><span class="bg-header">section 1</span></h1>
-        <img src="PPL-image.jpg" class="img-fluid mx-auto d-block">
+      <div id="olive" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[OLIVE&HEADS/BODIES/LEGS]</span></h1>
+        <div class="row mb-3">
+          <div class="col-6 col-md-4">
+            <img src="./images/Olive2.png" class="img-fluid">
+          </div>
+          <div class="col-6 col-md-4">
+            <p class="fs-3">[heads bodies legs]</p>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <p class="fs-4">some text could go here</p>
+            </div>
+            <div class="row">
+              <img src="./images/Olive1.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-3">
+            <p class="fs-3">[heads bodies legs]</p>
+          </div>
+          <div class="col-md-8">
+            <img src="./images/Olive3.png" class="img-fluid">
+          </div>
+          <div class="col-md-1">
+          </div>
+        </div>
+        <div class="row spacer"></div>
       </div>
 
-      <div id="section2" class="container-fluid scrollSection">
-        <h1 class="sectionHeader"><span class="bg-header">section 2</span></h1>
-        <img src="QAW-image.jpg" class="img-fluid mx-auto d-block">
+      <div id="lukaza" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[LUKAZA]</span></h1>
+        <div class="row mb-5">
+          <div class="col-sm-6 col-md-3 py-2">
+            <img src="./images/Lukaza1.png" class="img-fluid">
+          </div>
+          <div class="col-sm-6 col-md-3 py-2">
+            <img src="./images/Lukaza2.png" class="img-fluid">
+          </div>
+          <div class="col-sm-6 col-md-3 py-2">
+            <img src="./images/Lukaza3.png" class="img-fluid">
+          </div>
+          <div class="col-sm-6 col-md-3 py-2">
+            <img src="./images/Lukaza4.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="spacer"></div>
       </div>
 
-      <div id="section3" class="container-fluid scrollSection">
-        <h1 class="sectionHeader"><span class="bg-header">section 3</span></h1>
-        section 3 images
+      <div id="arthur" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[ARTHUR&ILOW]</span></h1>
+        <div class="spacer"></div>
       </div>
 
-      <div id="credits" class="container-fluid scrollSection">
+      <div id="andriniki" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[ANDRINIKI&ILOW]</span></h1>
+        <div class="spacer"></div>
+      </div>
+
+      <div id="laster" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[LASTER&ILOW]</span></h1>
+        <div class="spacer"></div>
+      </div>
+
+      <div id="clouds" class="container-fluid pb-3 scrollSection">
+        <h1 class="sectionHeader"><span class="bg-header">[ILOW&CLOUDS]</span></h1>
+        <div class="spacer"></div>
+      </div>
+
+      <div id="credits" class="container-fluid pb-3 scrollSection">
         <h1 class="sectionHeader"><span class="bg-header">credits</span></h1>
         credits text
+        <div class="spacer"></div>
       </div>
 
       <a class="btn btn-nav" href="#" role="button" id="returnLink">^</a>
@@ -116,23 +152,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      //scroll offset to account for navbar height
-      var scrollOffset = $("#scrollspyNav").height();
-      $(".scrollSection").css({paddingTop: scrollOffset + 10 + "px"});
-
-      //return-to-top button visibility
-      $(document).ready( function() {
-        var scrollPast = $("#about").offset().top;
-        console.log(scrollPast);
-        $(window).scroll(function(){
-          if ($(window).scrollTop() > scrollPast){
-            $("#returnLink").css({opacity: 1});
-          }
-          else { $("#returnLink").css({opacity: 0}); }
-        });
-      });
-
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
