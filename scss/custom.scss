@@ -7,7 +7,8 @@
 
 $custom-colors: (
   "nav": #ffe866,
-  "header": #fff5e0
+  "header": #fff5e0,
+  "highlight": #75322E
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -18,6 +19,7 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // typography overrides
 $font-family-base: "Andale Mono", AndaleMono, monospace;
+$mark-bg: #FCBECA;
 
 // nav link/button overrides
 $nav-link-color: #4c8e8a;
