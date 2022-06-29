@@ -9,8 +9,6 @@ html { scroll-behavior: smooth; }
   position: sticky;
   top: 10%;
   mix-blend-mode: screen;
-}
-.titleLink, .titleLink:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -37,6 +35,10 @@ html { scroll-behavior: smooth; }
 #clouds { background-color: #4c8e8a; }
 
 .figure-caption { background-color: #ffffff; }
+
+iframe {
+  max-width: 20%;
+}
 
 #returnLink {
   position: fixed;
