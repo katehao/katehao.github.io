@@ -2,7 +2,7 @@ html { scroll-behavior: smooth; }
 
 .titleBanner {
   height: 90vh;
-  background-image: url("../images/bg-pattern.jpg");
+  background: url("../images/bg-pattern.jpg");
   background-size: cover;
 }
 .titleText {
@@ -32,12 +32,32 @@ html { scroll-behavior: smooth; }
 #arthur { background-color: #000000; }
 #andriniki { background-color: #f8d58c; }
 #laster { background-color: #ab5b59; }
-#clouds { background-color: #4c8e8a; }
+#clouds { background-color: #7fdc6c; }
 
 .figure-caption { background-color: #ffffff; }
 
-iframe {
-  max-width: 20%;
+.comicDiv1 {
+  background: url("../images/comic1.png") no-repeat;
+  background-size: cover;
+  transition: background 0.1s linear;
+}
+
+.comicDiv1 img { visibility: hidden; }
+.comicDiv1:hover, .comicDiv1:active {
+  background: url("../images/comic2.png") no-repeat;
+  background-size: cover;
+}
+
+.comicDiv2 {
+  background: url("../images/comic3.png") no-repeat;
+  background-size: cover;
+  transition: background 0.1s linear;
+}
+
+.comicDiv2 img{ visibility: hidden; }
+.comicDiv2:hover, .comicDiv2:active {
+  background: url("../images/comic4.png") no-repeat;
+  background-size: cover;
 }
 
 #returnLink {
