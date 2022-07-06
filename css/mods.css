@@ -35,27 +35,61 @@ html { scroll-behavior: smooth; }
 #full { background-color: #000000; }
 
 .figure-caption { background-color: #ffffff; }
+.figure a {
 
-.comicDiv1 {
+}
+
+.thunder0053 {
+  background: url("../images/Thunder_0053.jpg") no-repeat;
+  background-size: cover;
+  transition: background 0.3s linear;
+  width: 100%;
+  max-width: 1900px;
+  position: relative;
+}
+
+#anchor-thunder0053-electric {
+  height: 6%;
+  width: 70%;
+  position: absolute;
+  left: 13%;
+  top: 24%;
+}
+
+#anchor-thunder0053-lights {
+  height: 17%;
+  width: 70%;
+  position: absolute;
+  left: 12%;
+  top: 59%;
+}
+
+.thunder0053 img { visibility: hidden; max-width: 100%; }
+.thunder0053:hover, .thunder0053:active {
+  background: url("../images/Thunder_0053_highlight.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cloud1 {
   background: url("../images/comic1.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
 
-.comicDiv1 img { visibility: hidden; }
-.comicDiv1:hover, .comicDiv1:active {
+.cloud1 img { visibility: hidden; }
+.cloud1:hover, .comicDiv1:active {
   background: url("../images/comic2.png") no-repeat;
   background-size: cover;
 }
 
-.comicDiv2 {
+.cloud2 {
   background: url("../images/comic3.png") no-repeat;
   background-size: cover;
   transition: background 0.1s linear;
 }
 
-.comicDiv2 img{ visibility: hidden; }
-.comicDiv2:hover, .comicDiv2:active {
+.cloud2 img{ visibility: hidden; }
+.cloud2:hover, .comicDiv2:active {
   background: url("../images/comic4.png") no-repeat;
   background-size: cover;
 }
