@@ -5,13 +5,15 @@
 $body-bg: #FFFCF6;
 
 $custom-colors: (
+  "light": #FFF9ED,
+  "dark": #686868,
   "nav": #ffe866,
-  "header": #FFF9ED,
+  "prompt": #F1A806,
   "highlight": #75322E,
   "electric": #bb9781,
   "electricbg": #f8d58c,
-  "cloud": #FFFFFF,
-  "cloudbg": #7fdc6c,
+  "cloud": #7fdc6c,
+  "cloudbg": #FFFFFF,
   "stories": #ff899f,
   "storiesbg": #4c8e8a,
   "process": #9E8706,
@@ -19,9 +21,7 @@ $custom-colors: (
   "lights": #e5d4f6,
   "lightsbg": #ab5b59,
   "full": #f1424f,
-  "fullbg": #000000,
-  "light":  #FFFFFF,
-  "dark": #000000
+  "fullbg": #000000
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -37,7 +37,6 @@ $link-color: #DA3C48;
 $link-decoration: none;
 $link-shade-percentage: 40%;
 $link-hover-color: shift-color($link-color, $link-shade-percentage);
-$figure-caption-color: #686868;
 
 // nav link/button overrides
 $nav-link-color: #4c8e8a;
