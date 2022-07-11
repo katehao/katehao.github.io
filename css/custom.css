@@ -37,7 +37,6 @@
   --bs-light: #FFF9ED;
   --bs-dark: #686868;
   --bs-nav: #ffe866;
-  --bs-prompt: #F1A806;
   --bs-highlight: #75322E;
   --bs-electric: #bb9781;
   --bs-electricbg: #f8d58c;
@@ -60,7 +59,6 @@
   --bs-light-rgb: 255, 249, 237;
   --bs-dark-rgb: 104, 104, 104;
   --bs-nav-rgb: 255, 232, 102;
-  --bs-prompt-rgb: 241, 168, 6;
   --bs-highlight-rgb: 117, 50, 46;
   --bs-electric-rgb: 187, 151, 129;
   --bs-electricbg-rgb: 248, 213, 140;
@@ -3225,36 +3223,6 @@ textarea.form-control-lg {
   border-color: #ffe866;
 }
 
-.btn-prompt {
-  color: #000;
-  background-color: #F1A806;
-  border-color: #F1A806;
-}
-.btn-prompt:hover {
-  color: #000;
-  background-color: #f5c251;
-  border-color: #f4b938;
-}
-.btn-check:focus + .btn-prompt, .btn-prompt:focus {
-  color: #000;
-  background-color: #f5c251;
-  border-color: #f4b938;
-  box-shadow: 0 0 0 0.25rem rgba(205, 143, 5, 0.5);
-}
-.btn-check:checked + .btn-prompt, .btn-check:active + .btn-prompt, .btn-prompt:active, .btn-prompt.active, .show > .btn-prompt.dropdown-toggle {
-  color: #000;
-  background-color: #f4b938;
-  border-color: #f2b11f;
-}
-.btn-check:checked + .btn-prompt:focus, .btn-check:active + .btn-prompt:focus, .btn-prompt:active:focus, .btn-prompt.active:focus, .show > .btn-prompt.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(205, 143, 5, 0.5);
-}
-.btn-prompt:disabled, .btn-prompt.disabled {
-  color: #000;
-  background-color: #F1A806;
-  border-color: #F1A806;
-}
-
 .btn-highlight {
   color: #fff;
   background-color: #75322E;
@@ -3867,31 +3835,6 @@ textarea.form-control-lg {
 }
 .btn-outline-nav:disabled, .btn-outline-nav.disabled {
   color: #ffe866;
-  background-color: transparent;
-}
-
-.btn-outline-prompt {
-  color: #F1A806;
-  border-color: #F1A806;
-}
-.btn-outline-prompt:hover {
-  color: #000;
-  background-color: #F1A806;
-  border-color: #F1A806;
-}
-.btn-check:focus + .btn-outline-prompt, .btn-outline-prompt:focus {
-  box-shadow: 0 0 0 0.25rem rgba(241, 168, 6, 0.5);
-}
-.btn-check:checked + .btn-outline-prompt, .btn-check:active + .btn-outline-prompt, .btn-outline-prompt:active, .btn-outline-prompt.active, .btn-outline-prompt.dropdown-toggle.show {
-  color: #000;
-  background-color: #F1A806;
-  border-color: #F1A806;
-}
-.btn-check:checked + .btn-outline-prompt:focus, .btn-check:active + .btn-outline-prompt:focus, .btn-outline-prompt:active:focus, .btn-outline-prompt.active:focus, .btn-outline-prompt.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(241, 168, 6, 0.5);
-}
-.btn-outline-prompt:disabled, .btn-outline-prompt.disabled {
-  color: #F1A806;
   background-color: transparent;
 }
 
@@ -5760,15 +5703,6 @@ textarea.form-control-lg {
   color: #524a21;
 }
 
-.alert-prompt {
-  color: #604302;
-  background-color: #fceecd;
-  border-color: #fbe5b4;
-}
-.alert-prompt .alert-link {
-  color: #4d3602;
-}
-
 .alert-highlight {
   color: #461e1c;
   background-color: #e3d6d5;
@@ -6276,20 +6210,6 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #665d29;
   border-color: #665d29;
-}
-
-.list-group-item-prompt {
-  color: #604302;
-  background-color: #fceecd;
-}
-.list-group-item-prompt.list-group-item-action:hover, .list-group-item-prompt.list-group-item-action:focus {
-  color: #604302;
-  background-color: #e3d6b9;
-}
-.list-group-item-prompt.list-group-item-action.active {
-  color: #fff;
-  background-color: #604302;
-  border-color: #604302;
 }
 
 .list-group-item-highlight {
@@ -7536,13 +7456,6 @@ textarea.form-control-lg {
   color: #fff1a3;
 }
 
-.link-prompt {
-  color: #F1A806;
-}
-.link-prompt:hover, .link-prompt:focus {
-  color: #f7cb6a;
-}
-
 .link-highlight {
   color: #75322E;
 }
@@ -8058,10 +7971,6 @@ textarea.form-control-lg {
 
 .border-nav {
   border-color: #ffe866 !important;
-}
-
-.border-prompt {
-  border-color: #F1A806 !important;
 }
 
 .border-highlight {
@@ -8958,11 +8867,6 @@ textarea.form-control-lg {
   color: rgba(var(--bs-nav-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-prompt {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-prompt-rgb), var(--bs-text-opacity)) !important;
-}
-
 .text-highlight {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-highlight-rgb), var(--bs-text-opacity)) !important;
@@ -9107,11 +9011,6 @@ textarea.form-control-lg {
 .bg-nav {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-nav-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.bg-prompt {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-prompt-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-highlight {

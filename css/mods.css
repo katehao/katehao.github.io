@@ -50,9 +50,9 @@ html { scroll-behavior: smooth; }
 }
 
 .prompt {
-  text-shadow:  1.5px 1.5px #f1424f,
-                3px 3px #e5d4f6,
-                4.5px 4.5px #bb9781;
+  text-shadow:  1.5px 1.5px gray,
+                3px 3px oldlace,
+                4.5px 4.5px mistyrose;
   font-weight: 900;
 }
 
@@ -107,6 +107,51 @@ html { scroll-behavior: smooth; }
 #cloud2:hover, .comicDiv2:active {
   background: url("../images/comic4.png") no-repeat;
   background-size: cover;
+}
+
+#sun:hover { transform: rotate(0.5turn); }
+
+#meteors0062 {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+#anchor-meteors0062-sunrise {
+  height: 24%;
+  width: 82%;
+  position: absolute;
+  top: 36.5%;
+  left: 9%;
+}
+
+#meteors0063 {
+  width: 100%;
+  max-width: 1900px;
+  position: relative;
+}
+#anchor-meteors0063-nodoubt {
+  height: 20.5%;
+  width: 56%;
+  position: absolute;
+  top: 16%;
+  left: 29%;
+}
+#anchor-meteors0063-dawn {
+  height: 23%;
+  width: 56%;
+  position: absolute;
+  top: 36%;
+  left: 29%;
+}
+
+#fence1 {
+  background: url("../images/fence.png") repeat;
+  background-size: contain;
+}
+
+#fence2 {
+  background: url("../images/fence2.png") repeat;
+  background-size: contain;
 }
 
 #returnLink {
